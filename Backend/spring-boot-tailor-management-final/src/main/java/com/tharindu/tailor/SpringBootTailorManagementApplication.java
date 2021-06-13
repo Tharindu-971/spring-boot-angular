@@ -16,6 +16,7 @@ public class SpringBootTailorManagementApplication {
 	
 	public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
         //config.exposeIdsFor(Customer.class);
+		//new git
     }
 
 }
