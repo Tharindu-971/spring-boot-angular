@@ -1,0 +1,44 @@
+<div class="p-7">
+    <h1 class="text-2xl text-center font-bold mb-8">Dashboard</h1>
+    <div class="grid sm:grid-cols-4 grid-cols-none gap-8">
+        <app-quick-view icon="info" caption="All Items">
+            <div>
+                <div class="mt-2">
+                    <app-message [success]=true></app-message>
+                </div>
+                <div class="mt-2">
+                    <app-message [warning]=true></app-message>
+                </div>
+                <div class="mt-2">
+                    <app-message [danger]=true></app-message>
+                </div>
+            </div>
+
+        </app-quick-view>
+        <app-quick-view icon="account_circle" caption="Name">
+            <div class="h-32 w-full  ">
+                <app-quic-view-detail [percentage]=value1 [color]="'red'"></app-quic-view-detail>
+
+            </div>
+
+
+        </app-quick-view>
+        <app-quick-view icon="text_snippet" caption="Name">
+            <div class="h-32 w-full">
+                <app-quic-view-detail [percentage]=value2 [color]="'green'"></app-quic-view-detail>
+            </div>
+
+        </app-quick-view>
+        <app-quick-view icon="info" caption="Name">
+            <div class="h-32 w-full">
+                <app-quic-view-detail [percentage]=value3 [color]="'blue'"></app-quic-view-detail>
+            </div>
+
+        </app-quick-view>
+    </div>
+    <div class="p-7">
+        <h1 class="text-2xl text-center font-bold mb-5">Today</h1>
+        <app-table-view [data]="items"></app-table-view>
+
+    </div>
+</div>
